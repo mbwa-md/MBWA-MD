@@ -4,7 +4,7 @@ cmd({
     pattern: "jid",
     desc: "Get the JID of the user or group.",
     react: "📍",
-    category: "group",
+    category: "utility",
     filename: __filename,
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
@@ -36,7 +36,7 @@ cmd({
     pattern: "jid2",
     desc: "Get the JID of the user or group.",
     react: "📍",
-    category: "group",
+    category: "utility",
     filename: __filename,
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {

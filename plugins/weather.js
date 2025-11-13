@@ -16,13 +16,13 @@ async (conn, mek, m, { from, q, reply, sender }) => {
         // ✅ Create fake verified contact
         const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:BRIAN-XD Official ✅
+FN:SILA-MD ✅
 TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}
 END:VCARD`;
 
         const fakeContact = await conn.sendMessage(from, {
             contacts: {
-                displayName: "BRIAN-XD Official ✅",
+                displayName: "SILA MD ✅",
                 contacts: [{ vcard }]
             }
         });
@@ -45,7 +45,7 @@ END:VCARD`;
 > 💨 *Wind:* ${data.wind.speed} m/s  
 > 📊 *Pressure:* ${data.main.pressure} hPa  
 
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ BRIAN-XD ᴛᴇᴄʜ*
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*
 `;
 
         await conn.sendMessage(from, {
@@ -55,8 +55,8 @@ END:VCARD`;
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363401765045963@newsletter',
-                    newsletterName: "TREND-X TECH",
+                    newsletterJid: '120363402325089913@newsletter',
+                    newsletterName: "𝐒𝐈𝐋𝐀 𝐓𝐄𝐂𝐇",
                     serverMessageId: 100
                 }
             }
