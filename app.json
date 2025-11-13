@@ -1,21 +1,21 @@
 {
-  "name": "Brian-XD",
-  "description": "Javascript WhatsApp bot made by  Brian",
+  "name": "SILA-MD",
+  "description": "Javascript WhatsApp bot made by  Sila",
   "logo": "https://files.catbox.moe/unxub3.png",
-  "keywords": ["Brian-XD","BRIAN TECH SPACE"],
+  "keywords": ["SILA-MD","SILA TECH "],
   "success_url": "/",
 
     "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Must Start with 'Brian~'",
+      "description": "Must Start with 'Sila~'",
       "required": false,
       "value": ""
     },
       "BOT_NAME": {
         "description": "write here your bot name.",
         "required": true,
-        "value": "Brian XD"      
+        "value": "SILA-MD-s2"      
     },  
     "MODE": {
       "description": "Set private/public/inbox/groups",
@@ -32,12 +32,12 @@
     "OWNER_NAME": {
       "description": "Put Owner Name Here",
       "required": true,
-      "value": "Brian"
+      "value": "SILA"
     },
     "OWNER_NUMBER": {
       "description": "Put only one Owner Number Here",
       "required": true,
-      "value": "254768116434"
+      "value": "255612491554"
     },
     
     "PRESENCE": {
