@@ -44,7 +44,7 @@ const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
 
-const ownerNumber = ['254768116434']
+const ownerNumber = ['255612491554']
 
 const tempDir = path.join(os.tmpdir(), 'cache-temp')
 if (!fs.existsSync(tempDir)) {
@@ -68,7 +68,7 @@ setInterval(clearTempDir, 5 * 60 * 1000)
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
   if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-  const sessdata = config.SESSION_ID.replace("Brian~", '')
+  const sessdata = config.SESSION_ID.replace("Silva~", '')
   const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
   filer.download((err, data) => {
     if (err) throw err
@@ -125,21 +125,20 @@ async function connectToWA() {
 
           let up = `*Hᴇʟʟᴏ ᴛʜᴇʀᴇ Brian xᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ! 👋🏻* 
 
-*ᴋᴇᴇᴘ ᴏɴ ᴜsɪɴɢ BRIAN TECH SPACE ᴍᴏᴅs🚩* 
+*ᴋᴇᴇᴘ ᴏɴ ᴜsɪɴɢ ꜱɪʟᴀ ᴍᴅ ʙᴏᴛ🚩* 
 
 > sᴜʙsᴄʀɪʙᴇ ʏᴛ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴛᴜᴛᴏʀɪᴀʟs
-https://www.youtube.com/@brian_tech_space
+https://www.youtube.com/@silatrix22
 
 - *ʏᴏᴜʀ ʙᴏᴛ ᴘʀᴇғɪx: ➡️[ . ]*
 > - ʏᴏᴜ ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴜʀ ᴘʀᴇғɪx ᴜsɪɴɢ ᴛʜᴇ .ᴘʀᴇғɪx ᴄᴏᴍᴍᴀɴᴅ
 
-> ᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ sʜᴀʀᴇ, sᴛᴀʀ & ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ⬇️ 
-https://github.com/briantechspace/Brian-XD
+> ᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ sʜᴀʀᴇ⬇️ 
+https://whatsapp.com/channel/0029VbBG4gfISTkCpKxyMH02
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱɪʟᴀ ᴍᴅ `;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/jwmx1j.jpg` }, caption: up })
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ BRIAN TECH SPACE`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/2jw99j.jpg` }, caption: up })
-
-          const channelJid = "0029Vb6LZInLSmbedYpdkA1u@newsletter"
+          const channelJid = "120363402325089913@newsletter"
           try {
             await conn.newsletterFollow(channelJid)
             console.log(`Successfully followed channel: ${channelJid}`)
@@ -241,7 +240,7 @@ conn?.ev?.on('messages.update', async updates => {
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const Brian = ('254768116434', '254768116434', '254768116434');
+    const Brian = ('255612491554');
     let isCreator = [udp, Brian, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -288,7 +287,7 @@ conn?.ev?.on('messages.update', async updates => {
 				}
  //================ownerreact==============
     
-if (senderNumber.includes("254768116434") && !isReact) {
+if (senderNumber.includes("255612491554") && !isReact) {
   const reactions = ["👑", "💀", "📊", "⚙️", "🧠", "🎯", "📈", "📝", "🏆", "🌍", "🇵🇰", "💗", "❤️", "💥", "🌼", "🏵️", ,"💐", "🔥", "❄️", "🌝", "🌚", "🐥", "🧊"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
@@ -809,7 +808,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   }
   
   app.get("/", (req, res) => {
-  res.send("Brian-XD STARTED ✅");
+  res.send("SILA MD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
